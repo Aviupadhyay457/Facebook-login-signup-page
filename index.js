@@ -12,10 +12,10 @@ loginForm.addEventListener('submit',function(e){
     }
     else{
         if(localStorage.getItem(username)){
-            console.log("wrong password")
+            alert("wrong password")
         }
         else{
-            console.log("no such user exists")
+            alert("no such user exists")
         }        
     }
 })

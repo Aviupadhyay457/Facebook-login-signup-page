@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="#" class="logo">facebook</a>
+            <div class="login-section">
+                <div class="login-field">
+                    <label class="login-label">Email or Phone</label>
+                    <input type="text" class="login-input">
+                    <div class="keep-logged-in">
+                        <input type="checkbox" id="keep-logged">
+                        <label for="keep-logged">Keep me logged in</label>
+                    </div>
+                </div>
+                <div class="login-field">
+                    <label class="login-label">Password</label>
+                    <input type="password" class="login-input">
+                    <a href="#" class="forgot-link">Forgotten your password?</a>
+                </div>
+                <button type="submit" class="login-btn">Log In</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="left-section">
+            <h1 class="main-heading">Connect with friends and the world around you on Facebook.</h1>
+            
+            <ul class="feature-list">
+                <li class="feature-item">
+                    <span class="feature-title">See photos and updates</span>
+                    <span class="feature-description">from friends in News Feed</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-title">Share what's new</span>
+                    <span class="feature-description">in your life on your timeline</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-title">Find more</span>
+                    <span class="feature-description">of what you're looking for with graph search</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-section">
+            <div class="signup-container">
+                <h2 class="signup-title">Sign Up</h2>
+                <p class="signup-subtitle">It's free and always will be</p>
+
+                <form class="signup-form">
+                    <div class="form-row">
+                        <input type="text" class="form-input half" placeholder="First name">
+                        <input type="text" class="form-input half" placeholder="Last name">
+                    </div>
+                    
+                    <input type="text" class="form-input full" placeholder="Email or mobile number">
+                    <input type="text" class="form-input full" placeholder="Re-enter email or mobile number">
+                    <input type="password" class="form-input full" placeholder="New password">
+
+                    <div class="birthday-section">
+                        <label class="birthday-label">Birthday</label>
+                        <div class="birthday-row">
+                            <select class="birthday-select">
+                                <option>Day</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                            <select class="birthday-select">
+                                <option>Year</option>
+                                <option>2024</option>
+                                <option>2023</option>
+                                <option>2022</option>
+                            </select>
+                            <select class="birthday-select">
+                                <option>Month</option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                            </select>
+                        </div>
+                        <a href="#" class="birthday-help">Why do I need to provide my birthday?</a>
+                    </div>
+
+                    <div class="gender-options">
+                        <label class="gender-option">
+                            Female
+                            <input type="radio" name="gender" value="female">
+                        </label>
+                        <label class="gender-option">
+                            Male
+                            <input type="radio" name="gender" value="male">
+                        </label>
+                    </div>
+
+                    <p class="terms-text">
+                        By clicking Sign Up, you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Data Use Policy</a>, including our <a href="#">Cookie Use</a>.
+                    </p>
+
+                    <button type="submit" class="signup-btn">Sign Up</button>
+
+                    <div class="create-page-link">
+                        <a href="#">Create a Page</a> for a celebrity, band or business.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
