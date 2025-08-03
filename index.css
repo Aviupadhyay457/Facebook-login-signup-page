@@ -2,22 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+   
 }
 
+body{
+     background-color: #F1F4F7;
+}
 .main-div{
     height:100vh;
     width: 100vw;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
+    gap:100px;
+    
 }
 .hero-text-container{
-    border:1px solid red;
+    
+    margin-bottom: 140px;
+    
 }
 
 .hero-text-container h1{
-    color:#0765FF
+    color:#0765FF;
+    font-size:4rem;
+    margin-bottom: 0.5rem;
+    
+}
+.hero-text-container p{
+    
+    font-size:1.75rem;
+    line-height: 1.1428;
+    width:500px;
+    font-weight: 400;
+
 }
 
 
@@ -26,11 +46,104 @@
 
 
 .login-container{
-    border:1px solid red;
+    
     display: flex;
     flex-direction: column;
+    width: 400px;
 }
 form{
+    /* border:1px solid red; */
     display: flex;
     flex-direction: column;
+    padding: 1rem 1rem 1.5rem 1rem;
+    background-color:#FFFFFF;
+    margin-bottom: 1.75em;
+    border-radius: 5px;
+    box-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.1), 
+        0 8px 16px rgba(0, 0, 0, 0.1);
+
+}
+form input{
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.875em 1em;
+    border:1px solid #90949C;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    background-color:#FFFFFF;
+    border:1px solid #DDDFE2;
+}
+form input:focus{
+    border-color: #0866ff;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    caret-color: #0866ff;
+    outline:none
+}
+
+form button{
+    font-size: 1.25rem;
+    line-height: 2.4;
+    background-color: #0765FF;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+form button:hover{
+    cursor: pointer;
+    filter: brightness(1.2); 
+}
+.forgot-pass{
+    color:#0765FF;
+    font-size: 0.875rem;
+    line-height: 1.33;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 1.25rem;
+    background-color:#FFFFFF;
+}
+.forgot-pass:hover{
+    text-decoration: underline;
+}
+.hr{
+    height:1px;
+    background-color: #DADDE1;
+    margin-bottom: 1.625rem;
+}
+.create-account{
+    
+    font-size: 1rem;
+    line-height: 3;
+    font-weight: 700;
+    color:white;
+    border-radius: 5px;
+    background-color: #35A420;
+    text-decoration: none;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+.create-account:hover{
+    background-color: #2e921c;
+}
+
+.create-page-para{
+    
+    text-align:center;
+    font-size: 0.75rem;
+
+}
+.create-page-btn{
+    text-decoration: none;
+    font-weight: 700;
+    color:black
+}
+.create-page-btn:hover{
+    text-decoration: underline;
 }
