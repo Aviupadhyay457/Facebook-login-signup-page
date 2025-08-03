@@ -156,6 +156,7 @@ body {
 
 .right-section {
     width: 408px;
+    border: 1px solid red;
 }
 
 .signup-container {
