@@ -9,19 +9,19 @@
 <body>
     <header class="header">
         <div class="header-content">
-            <a href="#" class="logo">facebook</a>
+            <a href="index.html" class="logo">facebook</a>
             <form class="login-section" id="login-form">
                 <div class="login-field">
                     <label class="login-label">Email or Phone</label>
                     <input type="text" class="login-input" name="username" required>
                     <div class="keep-logged-in">
-                        <input type="checkbox" id="keep-logged" required>
+                        <input type="checkbox" id="keep-logged">
                         <label for="keep-logged">Keep me logged in</label>
                     </div>
                 </div>
                 <div class="login-field">
                     <label class="login-label">Password</label>
-                    <input type="password" class="login-input" name="password">
+                    <input type="password" class="login-input" name="password" required>
                     <a href="#" class="forgot-link">Forgotten your password?</a>
                 </div>
                 <button type="submit" class="login-btn">Log In</button>
@@ -73,7 +73,7 @@
                             <select class="birthday-select" id="birthday-select-year" required>
                                 <option value="" selected disabled hidden>Year</option>
                             </select>
-                            <select class="birthday-select" required>
+                            <select class="birthday-select" id="birthday-select-month" required>
                                 <option value="" selected disabled hidden>Month</option>
                                 <option value="1">January</option>
                                 <option value="2">February</option>

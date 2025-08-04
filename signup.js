@@ -1,7 +1,7 @@
 const signupForm=document.getElementById("signup-form")
 const birthdaySelectDate=document.getElementById("birthday-select-date")
 const birthdaySelectYear=document.getElementById("birthday-select-year")
-
+const birthdaySelectMonth=document.getElementById("birthday-select-month")
 const phoneOrEmailRegex = /^(?:\d{10}|[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
 
 function validateInput(input) {
@@ -27,7 +27,13 @@ signupForm.addEventListener('submit',function(e){
         signupForm.reportValidity(); 
         return;
     }
-    
+    let userAge=birthdaySelectYear.value+"-"+birthdaySelectMonth.value+"-"+birthdaySelectDate.value
+    console.log(userAge)
+    let checkUserAge=new Date(userAge)
+    console.log(checkUserAge)
+    if (!checkUserAge){
+        return
+    }
     const signupFormData=new FormData(signupForm)
     const usernameSignup=signupFormData.get("username-signup")
     const usernameSignupConfirm=signupFormData.get("username-signup-confirm")
