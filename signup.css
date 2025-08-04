@@ -156,11 +156,12 @@ body {
 
 .right-section {
     width: 408px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    
 }
 
 .signup-container {
-    padding: 20px 0 0 0;
+    padding: 0px 0 0 40px;
 }
 
 .signup-title {
@@ -213,32 +214,37 @@ body {
 }
 
 .birthday-label {
-    color: #777;
-    font-size: 18px;
+    color: #44474E;
+    font-size: 22px;
     margin-bottom: 5px;
     display: block;
+    font-weight: 600;
 }
 
 .birthday-row {
     display: flex;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
     margin-bottom: 8px;
 }
 
 .birthday-select {
-    padding: 4px 3px;
-    border: 1px solid #bdc7d8;
+    padding: 4px 0px;
+    border: 1px solid #c6c6c7;
     font-size: 12px;
-    background-color: white;
+    background-color: #DADADC;
     color: #333;
     height: 27px;
+    border-radius: 5px;
+    font-weight: 500;
 }
 
 .birthday-help {
     color: #3b5998;
     font-size: 11px;
     text-decoration: none;
+    width:130px;
+    margin-left: 10px;
 }
 
 .gender-options {
@@ -250,17 +256,21 @@ body {
 .gender-option {
     display: flex;
     align-items: center;
-    padding: 7px 8px;
-    border: 1px solid #bdc7d8;
-    background-color: white;
-    width: 130px;
+    padding: 7px 20px 7px 0;
+    /* border: 1px solid #bdc7d8; */
+    /* background-color: white; */
+    width:fit-content;
     height: 35px;
     font-size: 18px;
-    color: #1d2129;
+    color: #44474E;
+    font-weight: 600;
+    letter-spacing: 1px;
+    /* border:1px solid red; */
+
 }
 
 .gender-option input[type="radio"] {
-    margin-left: auto;
+   margin-right: 8px;
 }
 
 .terms-text {
@@ -268,7 +278,7 @@ body {
     color: #777;
     line-height: 13px;
     margin: 10px 0 20px 0;
-    width: 316px;
+    width: 260px;
 }
 
 .terms-text a {
@@ -279,13 +289,13 @@ body {
 .signup-btn {
     background: linear-gradient(#67ae55, #578843);
     background-color: #69a74e;
-    border: 1px solid #3b6e22 #3b6e22 #2c5115;
+    border: 1px solid #3b6e22 ;
     color: white;
-    padding: 6px 20px;
+    padding: 7px 50px;
     font-size: 19px;
     font-weight: bold;
     cursor: pointer;
-    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
     border-radius: 5px;
     margin-bottom: 15px;
 }
@@ -302,4 +312,13 @@ body {
     color: #3b5998;
     text-decoration: none;
     font-weight: bold;
+}
+
+input:focus{
+    background-color: #FDFEB9;
+    outline:none
+}
+select::-webkit-scrollbar {
+    width: 0;
+    background: transparent; /* Make the scrollbar track transparent */
 }

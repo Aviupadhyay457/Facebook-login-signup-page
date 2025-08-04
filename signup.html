@@ -13,9 +13,9 @@
             <form class="login-section" id="login-form">
                 <div class="login-field">
                     <label class="login-label">Email or Phone</label>
-                    <input type="text" class="login-input" name="username">
+                    <input type="text" class="login-input" name="username" required>
                     <div class="keep-logged-in">
-                        <input type="checkbox" id="keep-logged">
+                        <input type="checkbox" id="keep-logged" required>
                         <label for="keep-logged">Keep me logged in</label>
                     </div>
                 </div>
@@ -67,11 +67,8 @@
                     <div class="birthday-section">
                         <label class="birthday-label">Birthday</label>
                         <div class="birthday-row">
-                            <select class="birthday-select">
-                                <option>Day</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
+                            <select class="birthday-select" id="birthday-select-date">
+                                <option value="" selected disabled hidden>Day</option>
                             </select>
                             <select class="birthday-select">
                                 <option>Year</option>
@@ -85,18 +82,19 @@
                                 <option>February</option>
                                 <option>March</option>
                             </select>
+                            <a href="#" class="birthday-help">Why do I need to provide my birthday?</a>
                         </div>
-                        <a href="#" class="birthday-help">Why do I need to provide my birthday?</a>
+                        
                     </div>
 
                     <div class="gender-options">
                         <label class="gender-option">
-                            Female
                             <input type="radio" name="gender" value="female">
+                            Female
                         </label>
                         <label class="gender-option">
-                            Male
                             <input type="radio" name="gender" value="male">
+                           Male 
                         </label>
                     </div>
 
