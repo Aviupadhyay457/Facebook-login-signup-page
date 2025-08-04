@@ -56,31 +56,37 @@
 
                 <form class="signup-form" id="signup-form">
                     <div class="form-row">
-                        <input type="text" class="form-input half" placeholder="First name">
-                        <input type="text" class="form-input half" placeholder="Last name">
+                        <input type="text" class="form-input half" placeholder="First name" required>
+                        <input type="text" class="form-input half" placeholder="Last name" required>
                     </div>
                     
                     <input type="text" class="form-input full" placeholder="Email or mobile number" name="username-signup">
-                    <input type="text" class="form-input full" placeholder="Re-enter email or mobile number">
+                    <input type="text" class="form-input full" placeholder="Re-enter email or mobile number" name="username-signup-confirm" >
                     <input type="password" class="form-input full" placeholder="New password" name="password-signup">
 
                     <div class="birthday-section">
                         <label class="birthday-label">Birthday</label>
                         <div class="birthday-row">
-                            <select class="birthday-select" id="birthday-select-date">
+                            <select class="birthday-select" id="birthday-select-date" required>
                                 <option value="" selected disabled hidden>Day</option>
                             </select>
-                            <select class="birthday-select">
-                                <option>Year</option>
-                                <option>2024</option>
-                                <option>2023</option>
-                                <option>2022</option>
+                            <select class="birthday-select" id="birthday-select-year" required>
+                                <option value="" selected disabled hidden>Year</option>
                             </select>
-                            <select class="birthday-select">
-                                <option>Month</option>
-                                <option>January</option>
-                                <option>February</option>
-                                <option>March</option>
+                            <select class="birthday-select" required>
+                                <option value="" selected disabled hidden>Month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
                             </select>
                             <a href="#" class="birthday-help">Why do I need to provide my birthday?</a>
                         </div>
@@ -89,7 +95,7 @@
 
                     <div class="gender-options">
                         <label class="gender-option">
-                            <input type="radio" name="gender" value="female">
+                            <input type="radio" name="gender" value="female" required>
                             Female
                         </label>
                         <label class="gender-option">
