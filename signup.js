@@ -27,13 +27,23 @@ signupForm.addEventListener('submit',function(e){
         signupForm.reportValidity(); 
         return;
     }
-    let userAge=birthdaySelectYear.value+"-"+birthdaySelectMonth.value+"-"+birthdaySelectDate.value
-    console.log(userAge)
-    let checkUserAge=new Date(userAge)
-    console.log(checkUserAge)
-    if (!checkUserAge){
-        return
+    let year = Number(birthdaySelectYear.value);
+    let month = Number(birthdaySelectMonth.value); 
+    let day = Number(birthdaySelectDate.value);
+
+    let checkUserAge = new Date(year, month - 1, day); 
+
+    if (
+        checkUserAge.getFullYear() !== year ||checkUserAge.getMonth() !== month - 1 ||checkUserAge.getDate() !== day
+    ) {
+        alert("Invalid date");
+        return;
     }
+    let today = new Date();
+    let age = today.getFullYear() - checkUserAge.getFullYear();
+    console.log(age)
+
+console.log("Valid date:", checkUserAge);
     const signupFormData=new FormData(signupForm)
     const usernameSignup=signupFormData.get("username-signup")
     const usernameSignupConfirm=signupFormData.get("username-signup-confirm")
